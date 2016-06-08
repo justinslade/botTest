@@ -15,11 +15,15 @@
 // [START app]
 'use strict';
 
-require('@google/cloud-debug');
+//require('@google/cloud-debug');
 var express = require('express');
 
 var app = express();
+// parse application/x-www-form-urlencoded
+//app.use(bodyParser.urlencoded());
 
+// parse application/json
+//app.use(bodyParser.json());
 app.get('/', function (req, res) {
   res.status(200).send('Hello, world!');
 });
